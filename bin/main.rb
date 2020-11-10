@@ -1,29 +1,35 @@
 #!/usr/bin/env ruby
-puts 'Hello microverse!'
-# class  Player
-#     @@board=[ 'o', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-#     @@player=1
-#     def token
-#         puts "player 1 uses: (X)\t player 2 uses:(O)"
-#     end
-#     def display_board
-#         puts("  Tic Tac Toe")
-#         print("     |    | \n");
-#     print("  #{@@board[1]}  | #{@@board[2]}  | #{@@board[3]}\n")
 
-#     print ("_____|____|_____\n");
-#     print("     |    |     \n");
-#     print("  #{@@board[4]}  | #{@@board[5]}  | #{@@board[6]}\n")
+puts "\nWelcome to Ruby Tic Tac Toe! Please input a name for Player 1 \n \n"
+player_one_name = gets.chomp
+puts "\nPlease input a name for Player 2 \n \n"
+player_two_name = gets.chomp
 
-#     print ("_____|____|_____\n");
-#     print("     |    |     \n");
-#     print("  #{@@board[7]}  | #{@@board[8]}  | #{@@board[9]}\n")
+puts "\nPlayer 1: #{player_one_name} and Player 2: #{player_two_name} \n \n"
 
-#     print ("_____|____|_____\n")
-#     print("     |    |     \n")
+# Create board
 
-#     end
-   
-# end
-# player1=Player.new
-# player1.display_board
+puts "\n#{player_one_name} please choose heads or tails (H/T) \n \n"
+
+coin_flip_choice = gets.chomp
+
+puts "\n#{player_one_name} chose #{coin_flip_choice}"
+
+# flip coin
+
+# decide if player one wins the coin toss
+game_session = true
+while game_session == true
+  puts "\n#{player_one_name} please choose a spot in the board \n"
+  gets.chomp
+
+  puts "\n#{player_two_name} please choose a spot in the board \n"
+  gets.chomp
+
+  # Will loop until condition is met
+  game_session = false
+end
+
+# print winner or draw
+
+puts "\n#{player_one_name} has won!"
