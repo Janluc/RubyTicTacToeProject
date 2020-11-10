@@ -52,6 +52,7 @@ sleep(3)
 game_session = true
 while game_session == true
     system "clear" 
+    puts" choose any number from 1-9 inclusive "
     display_board()
   puts "\n#{players[0]} please choose a spot on the board"
   choice=gets.chomp.to_i
