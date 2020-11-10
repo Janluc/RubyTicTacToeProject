@@ -1,27 +1,25 @@
 #!/usr/bin/env ruby
+def display_board
+  board = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  puts('  Tic Tac Toe')
+  print("     |    | \n")
+  print("  #{board[1]}  | #{board[2]}  | #{board[3]}\n")
 
-    # def token
-    #     puts "player 1 uses: (X)\t player 2 uses:(O)"
-    # end
-    def display_board
-        board=[ 0, 1, 2,3, 4, 5, 6, 7, 8, 9]
-        puts("  Tic Tac Toe")
-        print("     |    | \n");
-    print("  #{board[1]}  | #{board[2]}  | #{board[3]}\n")
+  print("_____|____|_____\n")
+  print("     |    |     \n")
+  print("  #{board[4]}  | #{board[5]}  | #{board[6]}\n")
 
-    print ("_____|____|_____\n");
-    print("     |    |     \n");
-    print("  #{board[4]}  | #{board[5]}  | #{board[6]}\n")
+  print("_____|____|_____\n")
+  print("     |    |     \n")
+  print("  #{board[7]}  | #{board[8]}  | #{board[9]}\n")
 
-    print ("_____|____|_____\n");
-    print("     |    |     \n");
-    print("  #{board[7]}  | #{board[8]}  | #{board[9]}\n")
+  print("_____|____|_____\n")
+  print("     |    |     \n")
+end
 
-    print ("_____|____|_____\n")
-    print("     |    |     \n")
-    end
 players = []
-player_win=false
+player_win = false
+player_draw = true
 puts "\nWelcome to Ruby Tic Tac Toe! Please input a name for Player 1 \n \n"
 players[0] = gets.chomp
 puts "\nPlease input a name for Player 2 \n \n"
@@ -51,25 +49,29 @@ sleep(3)
 # game loop
 game_session = true
 while game_session == true
-    system "clear" 
-    puts" choose any number from 1-9 inclusive "
-    display_board()
+  system 'clear'
+  puts 'choose any number from 1-9 inclusive'
+  # print board
+  display_board
   puts "\n#{players[0]} please choose a spot on the board"
-  choice=gets.chomp.to_i
-  while(choice<1||choice>9)
-    puts"chose a valid number for spot"
-    choice=gets.chomp.to_i
+  choice = gets.chomp.to_i
+  while choice < 1 || choice > 9
+    puts 'chose a valid number for spot'
+    choice = gets.chomp.to_i
   end
   puts "#{players[0]} chose a location"
-  # print board
- 
+
   # check if player won
   if player_win
     puts "#{players[0]} has won!"
     game_session = false
   end
 
+  if player_draw
+    puts 'Draw Game!'
+    game_session = false
+  end
   # else change turn order
   players[0], players[1] = players[1], players[0]
-
+  sleep(1)
 end
