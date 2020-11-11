@@ -1,4 +1,45 @@
 #!/usr/bin/env ruby
+class Player
+  attr_accessor :name, :token
+
+  def initialize(name,token)
+    self.name = name
+    self.token = token
+  end
+end
+class GameManager
+  attr_accessor :game_session
+  @@game_session=false
+  @@players=[]
+  @@playerwin=false
+  
+  def checkwin
+
+  end
+  def place_token
+  end
+  def coin_flip(choice)
+    coin_flip = %w[H T].sample
+    if coin_flip != coin_flip_choice
+      puts "#{players[0]} lost the coin flip!"
+      self.swap_player
+    else
+      puts "#{players[0]} won the coin flip!"
+    end
+    sleep(3)
+  end
+  def turn
+
+  end
+  def swap_player
+    @@players[0], @@players[1] = @@players[1], @@players[0]
+  end
+  def check_valid_choice
+
+  end
+end
+  
+end
 def display_board
   board = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   puts('  Tic Tac Toe')
