@@ -80,7 +80,7 @@ while game.game_session == true
 
   display_board(game.board)
   choice = get_player_choice(game.players[0].name).to_i
-  unless game.check_valid_choice(choice)
+  until game.check_valid_choice(choice)
     puts 'invalid choice'
     choice = get_player_choice(game.players[0].name).to_i
   end
