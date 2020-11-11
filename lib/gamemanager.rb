@@ -37,6 +37,10 @@ class GameManager
   end
 
   def check_valid_choice(choice)
-    false if choice < 1 || choice > 9 || @board[choice].is_a?(String)
+    if choice < 1 || choice > 9 || @board[choice].is_a?(String)
+      false
+    else
+      true
+    end
   end
 end
