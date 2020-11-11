@@ -1,3 +1,4 @@
+# Player Class
 class Player
   attr_accessor :name, :token
 

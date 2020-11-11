@@ -1,3 +1,4 @@
+# Game Manager Class
 class GameManager
   attr_accessor :game_session, :players, :board
 
