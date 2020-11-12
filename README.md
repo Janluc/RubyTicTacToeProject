@@ -2,7 +2,7 @@
 
 > A Ruby program focused on object oriented programming. 
 
-
+![screenshot](app_screenshot.png)
 ## Built With
 
 - Ruby,
@@ -22,7 +22,7 @@
   - If on Windows: Enter the "bin" folder and double click on "main.rb"
   - If on Linux/Mac: You must open up your console and change to the directory where you downloaded the Tic Tac Toe game.
     - Then type "bin/main.rb" without the quotes and the game will launch
-    
+
 ## Game Instructions
 
 - Tic Tac Toe is a 2 player puzzle game played on a grid that is 3x3.
