@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-load '../lib/player.rb'
-load '../lib/gamemanager.rb'
+require_relative '../lib/player'
+require_relative '../lib/gamemanager'
 
 def get_player_choice(player_name)
   puts "#{player_name} please choose a valid number from 1-9"
