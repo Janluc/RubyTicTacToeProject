@@ -105,7 +105,7 @@ while play_again == true
 
   end
 
-  puts 'Would you like to play again? (Y/N)'
+  puts 'press Y or any key to play again? (Y/N)'
   if gets.chomp.upcase == 'N'
     puts 'Thank you for playing!'
     sleep(3)
