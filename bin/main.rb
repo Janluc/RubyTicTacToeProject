@@ -51,6 +51,10 @@ end
 def init_coin_flip(game)
   puts "\n#{game.players[0].name} please choose heads or tails (H/T) \n \n"
   coin_flip_choice = gets.chomp.upcase
+  until %w[h H T t].include?(coin_flip_choice)
+    puts 'sorry you gotta enter H or T'
+    coin_flip_choice = gets.chomp.upcase
+  end
   puts "\n#{game.players[0].name} chose #{coin_flip_choice}"
   flip_result = game.coin_flip(coin_flip_choice)
   if !flip_result
@@ -105,7 +109,7 @@ while play_again == true
 
   end
 
-  puts 'press Y or any key to play again? (Y/N)'
+  puts 'press Y or any to play again? (Y/N)'
   if gets.chomp.upcase == 'N'
     puts 'Thank you for playing!'
     sleep(3)
