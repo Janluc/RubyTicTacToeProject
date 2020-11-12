@@ -51,7 +51,7 @@ end
 def init_coin_flip(game)
   puts "\n#{game.players[0].name} please choose heads or tails (H/T) \n \n"
   coin_flip_choice = gets.chomp.upcase
-  until %w[h H T t].include?(coin_flip_choice)
+  until %w[H T].include?(coin_flip_choice)
     puts 'sorry you gotta enter H or T'
     coin_flip_choice = gets.chomp.upcase
   end
