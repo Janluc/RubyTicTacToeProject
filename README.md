@@ -8,8 +8,10 @@
 - Ruby,
 - Visual Studio Code, Git and Github.
 
+
 ## Prerequisites
 - Ruby 2.7 installed
+- Rspec gem installed
 - Operating system such as Windows, Mac, or Linux
 - Access to a Console/Terminal/Command Window
 
@@ -22,6 +24,9 @@
   - If on Windows: Enter the "bin" folder and double click on "main.rb"
   - If on Linux/Mac: You must open up your console and change to the directory where you downloaded the Tic Tac Toe game.
     - Then type "bin/main.rb" without the quotes and the game will launch
+
+## How to Run tests
+ - In your command terminal, you will need to go to the directory where you cloned the repo and then run "rspec --format documentation" to see all the test cases
 
 ## Game Instructions
 
