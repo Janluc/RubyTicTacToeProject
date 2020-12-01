@@ -45,6 +45,11 @@
 - Twitter: [@Janluc123](https://twitter.com/Janluc123)
 - Linkedin: [linkedin](https://www.linkedin.com/in/janluc-saneaux-91707a1b4/) 
 
+👨‍💻 **Carlos Gutierrez**
+
+- GitHub: [@cgcarlosg](https://github.com/cgcarlosg)
+- Twitter: [@cgcarlosg1](https://twitter.com/cgcarlosg1)
+- LinkedIn: [@carlosalbeniogutierrez](https://linkedin.com/in/carlosalbeniogutierrez)
 
 ## 🤝 Contributing
 
