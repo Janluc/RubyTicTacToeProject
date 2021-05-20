@@ -5,6 +5,7 @@ AllCops:
 
   DisplayCopNames: true
 
+
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
@@ -47,4 +48,12 @@ Style/HashEachMethods:
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
+  Enabled: false
+Layout/SpaceAroundOperators:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Style/ClassVars:
   Enabled: false
