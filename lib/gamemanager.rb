@@ -19,8 +19,10 @@ class GameManager
        @board[3] == @board[5] && @board[5] == @board[7] ||
        @board[2] == @board[5] && @board[5] == @board[8] ||
        @board[3] == @board[6] && @board[6] == @board[9]
-      true
+      return true
     end
+
+    false
   end
 
   def check_draw
